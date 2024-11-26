@@ -28,8 +28,6 @@ Este método cria um **Gatherer** que transforma elementos de um tipo para outro
 Esse método é útil quando precisamos alterar a forma dos dados antes de processá-los.
 
 ```java
-// "Se o código já é simples e óbvio, não há necessidade de adicionar um comentário" -  ¯\_(ツ)_/¯ ( eu não ligo, segue código )
-
 private static <T> Gatherer<T, List<T>, List<T>> getGathererWithList() {
     // Fornecedor que inicializa uma nova ArrayList
     Supplier<List<T>> initializer = ArrayList::new;
